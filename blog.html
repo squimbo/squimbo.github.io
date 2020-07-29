@@ -5,10 +5,12 @@ title: Blog
 <h1>Latest Posts what the hell please work</h1>
 {% for post in collection.posts %}
   {{ post.title }}
+{% else %}
+  Cannot locate this collection OR it is empty.
 {% endfor %}
 
 
-{% for i in (1..5) %}
+{% for i in (1..9) %}
   {% if i == 4 %}
     {% continue %}
   {% else %}
