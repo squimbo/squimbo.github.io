@@ -2,8 +2,15 @@
 layout: default
 title: Blog
 ---
-<h1>Latest Posts 2.5</h1>
+<h1>Latest Posts what the hell please work</h1>
 {% for post in site.posts %}
   {{ post.title }} <br>
 {% endfor %}
 
+{% for i in (1..5) %}
+  {% if i == 4 %}
+    {% continue %}
+  {% else %}
+    {{ i }}
+  {% endif %}
+{% endfor %}
