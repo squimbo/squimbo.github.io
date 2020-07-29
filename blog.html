@@ -3,9 +3,10 @@ layout: default
 title: Blog
 ---
 <h1>Latest Posts what the hell please work</h1>
-{% for post in site.posts %}
-  {{ post.title }} <br>
+{% for post in collection.posts %}
+  {{ post.title }}
 {% endfor %}
+
 
 {% for i in (1..5) %}
   {% if i == 4 %}
