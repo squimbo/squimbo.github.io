@@ -3,10 +3,10 @@ layout: default
 title: Blog
 ---
 <h1>Latest Posts what the hell please work</h1>
-{% for post in collection.posts %}
+{% for post in site.posts %}
   {{ post.title }}
 {% else %}
-  Cannot locate this collection OR it is empty.
+  Cannot locate this site OR it is empty.
 {% endfor %}
 
 
